@@ -1,7 +1,10 @@
 # FACEBOOK CLONE
 This app was created with vite, and uses react and typescript
 
-## Features
+## Preview
+
+Login
+<img src='./src/imgs/previewForReadme/login.png' alt='facebook login' />
 
 
 ## Commands
