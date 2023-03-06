@@ -1,0 +1,202 @@
+@import "../../scss/colors.scss";
+
+.login {
+    background-color: $secondary-clr;
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 20px;
+    margin-bottom: 50px;
+    padding: 150px 25px;
+    gap: 5%;
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    img {
+        margin-left: -25px;
+        width: 300px;
+    }
+    h2 {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 32px;
+        max-width: 500px;
+    }
+}
+
+.login-fields {
+    p {
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: 25px;
+        padding-top: 0;
+        text-align: center;
+    }
+}
+
+.login-box {
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+    height: 350px;
+    padding: 15px;
+    width: 396px;
+    input {
+        border: 1px solid $pr-gray;
+        border-radius: 6px;
+        font-size: 17px;
+        height: 48px;
+        outline: none;
+        padding: 14px 16px;
+        width: 100%;
+
+        &:focus {
+            border: 1px solid $primary-clr;
+        }
+    }
+    .forgot-passwd {
+        color: $primary-clr;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        margin: 5px 0 10px 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.btn-login {
+    background-color: $primary-clr;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 48px;
+    padding: 0 16px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    &:hover {
+        background-color: $primary-clr-dark;
+    }
+}
+
+.login-seperator {
+    width: 100%;
+    height: 1px;
+    background-color: $pr-gray;
+}
+
+.btn-create-acc {
+    background-color: $pr-green;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    height: 48px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 16px;
+    transition: all 0.3s ease-in-out;
+    width: 60%;
+
+    &:hover {
+        background-color: $pr-green-dark;
+    }
+}
+
+.login-footer {
+    background-color: white;
+    height: 170px;
+    padding: 20px 50px;
+    position: relative;
+    width: 100%;
+}
+
+.login-footer-lang {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 8px;
+
+    button {
+        font-size: 14px;
+        width: 30px;
+    }
+}
+
+.footer-list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2%;
+    width: 100%;
+    flex-wrap: wrap;
+
+    li {
+        list-style: none;
+        font-size: 12px;
+        display: inline-block;
+        margin: 5px 0;
+    }
+    a {
+        color: $pr-dark-gray;
+        text-decoration: none;
+        white-space: nowrap;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.login-footer-links {
+    margin-top: 5px;
+}
+
+.footer-copyright {
+    color: $pr-dark-gray;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .login-header {
+        margin-bottom: 50px;
+        max-width: 400px;
+        img {
+            margin: auto;
+        }
+    }
+}
